@@ -1,0 +1,54 @@
+/* Анимация для заголовка H1 */
+.col-md-9 h1.mb-4 {
+    transition: transform 0.3s ease;
+}
+
+.col-md-9 h1.mb-4:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Анимация для параграфа */
+.animated-paragraph {
+    transition: background-color 0.5s ease;
+}
+
+.animated-paragraph.highlighted {
+    background-color: #f0f8ff;
+}
+
+/* Анимация для таблицы лекций */
+.lectures-table {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none;
+}
+
+.lectures-table.visible {
+    opacity: 1;
+    transform: translateY(0);
+    display: table;
+}
+
+/* Анимация для фотографии */
+.rounded-circle {
+    transition: transform 0.5s ease;
+}
+
+.rounded-circle:hover {
+    transform: rotate(360deg);
+}
+
+/* Анимация для сообщения формы */
+.form-message {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, color 0.5s ease;
+}
+
+.form-message.visible {
+    opacity: 1;
+    transform: translateY(0);
+    color: #28a745;
+}

@@ -1,0 +1,14 @@
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.max-width-100 {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .max-width-100 {
+        max-width: 100%;
+    }
+}

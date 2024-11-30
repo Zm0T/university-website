@@ -1,0 +1,48 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #0077b6;
+    transition: color 0.3s;
+ }
+
+ .navbar-light .navbar-nav .nav-link:hover {
+    color: #03045e;
+ }
+
+ @media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+ }
+
+ .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+ }
+
+ .carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    text-align: center;
+ }
+
+ .carousel-caption h5 {
+    font-weight: bold;
+    margin-bottom: 8px;
+ }
+
+ @media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 15px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+ }

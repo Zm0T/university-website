@@ -1,0 +1,74 @@
+.navigation {
+    display: flex;
+    height: 78px;
+    margin-top: 30px;
+    align-items: center;
+    background-color: #caf0f8;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    font-family: "JetBrainsMono";
+    font-size: 18px;
+    text-decoration: none;
+    color: #0077b6;
+    transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+ul li a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #03045e;
+}
+
+
+@media (max-width: 768px) {
+    .navigation {
+        height: auto;
+        padding: 10px;
+        justify-content: start;
+    }
+
+    ul {
+        padding-left: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+
+    ul li a:hover {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        padding: 5px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    ul li a:hover {
+        font-size: 16px;
+    }
+}
